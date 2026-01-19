@@ -129,7 +129,7 @@ sudo dumpsys battery | grep level | awk '{print $2}'
 
 ### 手机真实电量
 
-这里就不展开说了，目前本机型的 $面板电量≠实际电量$ 
+这里就不展开说了，目前本机型的 $\mathrm{面板电量} \ne  \mathrm{实际电量}$ 
 
 ## 获取当前播放的媒体标题
 
