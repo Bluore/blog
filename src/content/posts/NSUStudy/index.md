@@ -3,7 +3,7 @@ title: "学校手势签到/扫码签到破解思路分享"
 published: 2024-11-09
 description: ""
 image: ""
-tags: [开源, 记录]
+tags: [开源, 破解, 记录]
 category: "破解"
 draft: false
 lang: "zh-CN"
@@ -228,13 +228,15 @@ Access-Control-Max-Age: 1728000
 
 这个猜测在一次高数课上得到了验证
 
-<video controls src="./1.mp4" title="软件实操演示"></video>
+:::tip
+视频暂不演示
+:::
 
 软件开源地址：（宇宙声明：仅供学习，请勿用于非法用途）
 
 ::github{repo="Bluore/NSUedu"}
 
-:::note
+:::warning
 
 不过现在你别想一些歪门邪道了，这个平台在25年便弃用了
 

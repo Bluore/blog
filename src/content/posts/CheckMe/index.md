@@ -4,7 +4,7 @@ published: 2026-01-18
 description: "记录一下制作这个网站所遇到的问题和解决方案"
 image: "3.png"
 tags: [开源, 网站, 记录]
-category: "网站"
+category: "教程"
 draft: false
 lang: "zh-CN"
 ---
