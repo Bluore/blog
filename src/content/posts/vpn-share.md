@@ -1,13 +1,15 @@
 ---
-title: VPN-share
+title: 加密客户端
 published: 2026-01-22
 description: ''
 image: ''
 tags: [分享]
 category: '分享'
-draft: false 
+draft: false
 lang: ''
 ---
+
+仅提供更加安全访问内网设备和加密访问的方式
 
 # 下载
 
@@ -39,8 +41,3 @@ lang: ''
 
 > - [Github](https://github.com/chen08209/FlClash/releases)
 
-# 规则
-
-```txt
-http://144.24.239.56/api/v1/client/subscribe?token=a5a799d5237bb5ec49dafae37be97364
-```
