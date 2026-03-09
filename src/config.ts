@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "CheckMe",
-			url: "https://me.bluore.top", // Internal links should not include the base path, as it is automatically added
+			url: "https://me.bluore.cn", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "Bluore",
-	bio: "coding何尝不是一种乐趣",
+	bio: "来Coding点有趣的东西叭~",
 	links: [
 		{
 			name: "Bilibili",
