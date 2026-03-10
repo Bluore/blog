@@ -1,0 +1,9 @@
+---
+import ClipboardPanel from "@components/ClipboardPanel.svelte";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { clipboardConfig } from "../config";
+---
+
+<MainGridLayout title="云剪切板">
+    <ClipboardPanel client:only="svelte" apiBaseUrl={clipboardConfig.apiBaseUrl}></ClipboardPanel>
+</MainGridLayout>
