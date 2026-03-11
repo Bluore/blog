@@ -105,6 +105,8 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const clipboardConfig: ClipboardConfig = {
-	// 后端 API 基础 URL（构建时配置）
-	apiBaseUrl: "http://localhost:9957",
+	// 后端 API 基础 URL
+	apiBaseUrl: import.meta.env.DEV
+		? "http://localhost:9957"
+		: "https://blog-backend.bluore.cn",
 };
