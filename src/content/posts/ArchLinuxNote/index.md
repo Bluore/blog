@@ -1,5 +1,5 @@
 ---
-title: "Linux常用命令-小记"
+title: "Linux常用命令 - 小记"
 published: 2026-03-08
 description: ""
 image: "cover.png"

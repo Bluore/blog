@@ -1,17 +1,19 @@
 ---
-title: NSU作业平台 破解
+title: NSU作业平台 - 破解
 published: 2024-12-06
 description: ''
 image: ''
 tags: [破解, 分享]
-category: '分享'
+category: '破解'
 draft: false 
 lang: ''
 ---
 
 东软教学平台作业的客观题答案获取与一键作答
 
-```js with wrap=false collapse={4-179}
+安装这个脚本[Greasy Fork](https://greasyfork.org/zh-CN/scripts/519339-%E7%AD%94%E6%A1%88%E6%98%BE%E7%A4%BA-%E8%87%AA%E5%8A%A8%E7%AD%94%E9%A2%98-%E6%88%90%E9%83%BD%E4%B8%9C%E8%BD%AF%E5%AD%A6%E9%99%A2-%E5%A4%A7%E8%BF%9E%E4%B8%9C%E8%BD%AF%E5%BA%94%E8%AF%A5%E4%B9%9F%E5%8F%AF%E4%BB%A5-4s%E5%B9%B3%E5%8F%B0%E8%AF%95%E5%8D%B7%E7%AD%94%E6%A1%88%E6%98%BE%E7%A4%BA-%E4%B8%80%E9%94%AE%E7%AD%94%E9%A2%98)
+
+```js with wrap=false
 // ==UserScript==
 // @name         【答案显示|自动答题】成都东软学院(大连东软应该也可以)||4S平台试卷答案显示||一键答题
 // @license      MIT
@@ -200,4 +202,3 @@ lang: ''
 })();
 ```
 
-[Greasy Fork](https://greasyfork.org/zh-CN/scripts/519339-%E7%AD%94%E6%A1%88%E6%98%BE%E7%A4%BA-%E8%87%AA%E5%8A%A8%E7%AD%94%E9%A2%98-%E6%88%90%E9%83%BD%E4%B8%9C%E8%BD%AF%E5%AD%A6%E9%99%A2-%E5%A4%A7%E8%BF%9E%E4%B8%9C%E8%BD%AF%E5%BA%94%E8%AF%A5%E4%B9%9F%E5%8F%AF%E4%BB%A5-4s%E5%B9%B3%E5%8F%B0%E8%AF%95%E5%8D%B7%E7%AD%94%E6%A1%88%E6%98%BE%E7%A4%BA-%E4%B8%80%E9%94%AE%E7%AD%94%E9%A2%98)
