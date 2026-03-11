@@ -259,7 +259,7 @@
             bind:value={seed}
             oninput={handleSeedChange}
             placeholder="输入种子名称（留空默认为 public）"
-            class="flex-1 px-4 py-2 rounded-lg bg-[var(--btn-plain-bg-hover)] border border-[var(--btn-plain-bg-hover)] focus:border-[var(--primary)] focus:outline-none transition placeholder:text-30"
+            class="flex-1 px-4 py-2 rounded-lg bg-[var(--btn-plain-bg-hover)] border border-[var(--btn-plain-bg-hover)] focus:border-[var(--primary)] focus:outline-none transition placeholder:text-30 text-75"
         />
         <button
             onclick={postText}
@@ -276,7 +276,7 @@
             bind:value={textContent}
             placeholder="在这里输入文本内容..."
             rows="3"
-            class="w-full px-4 py-3 rounded-lg bg-[var(--btn-plain-bg-hover)] border border-[var(--btn-plain-bg-hover)] focus:border-[var(--primary)] focus:outline-none transition resize-none placeholder:text-30"
+            class="w-full px-4 py-3 rounded-lg bg-[var(--btn-plain-bg-hover)] border border-[var(--btn-plain-bg-hover)] focus:border-[var(--primary)] focus:outline-none transition resize-none placeholder:text-30 text-75"
         ></textarea>
     </div>
 
