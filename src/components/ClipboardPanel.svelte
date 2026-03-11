@@ -389,7 +389,7 @@
                     {#if item.type === "text"}
                         {@const needsTruncate = shouldTruncate(item.content)}
                         {@const isItemExpanded = isExpanded(item.id)}
-                        <p class="text-75 whitespace-pre-wrap break-words">
+                        <p class="text-75 whitespace-pre-wrap break-all">
                             {#if needsTruncate && !isItemExpanded}
                                 {truncateText(item.content)}
                             {:else}
