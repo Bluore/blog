@@ -169,7 +169,7 @@ class TableOfContents extends HTMLElement {
 
             if (this.isInRange(offsetTop, 0, window.innerHeight)
                 || this.isInRange(offsetBottom, 0, window.innerHeight)
-                || (offsetTop < 0 && offsetBottom > window.innerHeight)) {                    
+                || (offsetTop < 0 && offsetBottom > window.innerHeight)) {
                 this.markActiveHeading(i);
             }
             else if (offsetTop > window.innerHeight) break;
@@ -201,15 +201,42 @@ class TableOfContents extends HTMLElement {
     };
 
     connectedCallback() {
-        // wait for the onload animation to finish, which makes the `getBoundingClientRect` return correct values
-        const element = document.querySelector('.prose');
-        if (element) {
+        // Wait for the onload animation to finish, which makes the `getBoundingClientRect` return correct values
+        // Use a more robust approach that works with swup page transitions
+        this.initWithFallback();
+    };
+
+    initWithFallback = () => {
+        const tryInit = () => {
+            const element = document.querySelector('.prose');
+            if (!element) {
+                setTimeout(tryInit, 100);
+                return;
+            }
+
+            // Check if animation already completed by checking computed style
+            const computedStyle = getComputedStyle(element);
+            const animationName = computedStyle.animationName;
+
+            // If no animation or animation already ended (opacity is 1), init immediately
+            if (animationName === 'none' || computedStyle.opacity === '1') {
+                this.init();
+                return;
+            }
+
+            // Wait for animationend
             element.addEventListener('animationend', () => {
                 this.init();
             }, { once: true });
-        } else {
-            console.debug('Animation element not found');
-        }
+
+            // Safety fallback: if animationend doesn't fire within 2 seconds, still init
+            setTimeout(() => {
+                this.init();
+            }, 2000);
+        };
+
+        // Small delay to ensure DOM is ready after swup transition
+        setTimeout(tryInit, 50);
     };
 
     init() {
