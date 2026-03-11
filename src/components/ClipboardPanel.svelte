@@ -258,7 +258,7 @@
             type="text"
             bind:value={seed}
             oninput={handleSeedChange}
-            placeholder="输入种子名称（留空默认为 public）"
+            placeholder="输入种子，会有不同内容哦"
             class="flex-1 px-4 py-2 rounded-lg bg-[var(--btn-plain-bg-hover)] border border-[var(--btn-plain-bg-hover)] focus:border-[var(--primary)] focus:outline-none transition placeholder:text-30 text-75"
         />
         <button
