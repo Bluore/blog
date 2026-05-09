@@ -1,4 +1,5 @@
 import type {
+	ClipboardConfig,
 	ExpressiveCodeConfig,
 	LicenseConfig,
 	NavBarConfig,
@@ -44,6 +45,10 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		{
+			name: "云剪切板",
+			url: "/clipboard/",
+		},
 		{
 			name: "CheckMe",
 			url: "https://me.bluore.cn", // Internal links should not include the base path, as it is automatically added
@@ -97,4 +102,11 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
+};
+
+export const clipboardConfig: ClipboardConfig = {
+	// 后端 API 基础 URL
+	apiBaseUrl: import.meta.env.DEV
+		? "http://localhost:9957"
+		: "https://blog-backend.bluore.cn",
 };
