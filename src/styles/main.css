@@ -1,5 +1,17 @@
 @tailwind components;
 
+* {
+    cursor: url('/cursor/default.png'), auto;
+}
+
+a, button, details, [role="button"], input[type="submit"], input[type="button"] {
+    cursor: url('/cursor/pointer.png'), pointer;
+}
+
+a *{
+    cursor: url('/cursor/pointer.png'), auto;
+}
+
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
